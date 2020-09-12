@@ -1,6 +1,6 @@
 //
 //  UserObj.swift
-//  ListView
+//  AboutMe
 //
 //  Created by Aiur on 23.08.2020.
 //  Copyright © 2020 Aiur. All rights reserved.
@@ -40,6 +40,11 @@ final class UserObj: ObservableObject {
         init(title: String, value: String) {
             self.title = title
             self.value = value
+        }
+        
+        enum Types {
+            case title
+            case value
         }
     }
     

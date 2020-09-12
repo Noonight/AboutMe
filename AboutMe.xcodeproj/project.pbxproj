@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D926E2F5250B9D080087A59A /* AddUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D926E2F4250B9D080087A59A /* AddUserInfo.swift */; };
+		D926E2F8250D01590087A59A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D926E2F7250D01590087A59A /* Extensions.swift */; };
 		D94F0B1E24F24CC70002F38B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F0B1D24F24CC70002F38B /* AboutView.swift */; };
 		D94F0B2024F24CE40002F38B /* UserObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F0B1F24F24CE40002F38B /* UserObj.swift */; };
 		D94F0B2224F24EDF0002F38B /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F0B2124F24EDF0002F38B /* EditUserView.swift */; };
@@ -22,11 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D926E2F4250B9D080087A59A /* AddUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserInfo.swift; sourceTree = "<group>"; };
+		D926E2F7250D01590087A59A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D94F0B1D24F24CC70002F38B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D94F0B1F24F24CE40002F38B /* UserObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObj.swift; sourceTree = "<group>"; };
 		D94F0B2124F24EDF0002F38B /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
 		D94F0B232500D5BC0002F38B /* ChangeUserInfoModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserInfoModalView.swift; sourceTree = "<group>"; };
-		D956C9B524EEB20C004FE2C0 /* ListView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D956C9B524EEB20C004FE2C0 /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D956C9B824EEB20D004FE2C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D956C9BA24EEB20D004FE2C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D956C9BC24EEB20D004FE2C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,10 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D926E2F6250D014E0087A59A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D926E2F7250D01590087A59A /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D956C9AC24EEB20C004FE2C0 = {
 			isa = PBXGroup;
 			children = (
-				D956C9B724EEB20C004FE2C0 /* ListView */,
+				D956C9B724EEB20C004FE2C0 /* AboutMe */,
 				D956C9B624EEB20C004FE2C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,14 +72,15 @@
 		D956C9B624EEB20C004FE2C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D956C9B524EEB20C004FE2C0 /* ListView.app */,
+				D956C9B524EEB20C004FE2C0 /* AboutMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D956C9B724EEB20C004FE2C0 /* ListView */ = {
+		D956C9B724EEB20C004FE2C0 /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
+				D926E2F6250D014E0087A59A /* Extensions */,
 				D956C9B824EEB20D004FE2C0 /* AppDelegate.swift */,
 				D956C9BA24EEB20D004FE2C0 /* SceneDelegate.swift */,
 				D956C9BC24EEB20D004FE2C0 /* ContentView.swift */,
@@ -78,11 +91,12 @@
 				D956C9CC24EEB35F004FE2C0 /* ContactsObj.swift */,
 				D956C9CE24EEB412004FE2C0 /* Data.swift */,
 				D94F0B1D24F24CC70002F38B /* AboutView.swift */,
+				D926E2F4250B9D080087A59A /* AddUserInfo.swift */,
 				D94F0B2124F24EDF0002F38B /* EditUserView.swift */,
 				D94F0B232500D5BC0002F38B /* ChangeUserInfoModalView.swift */,
 				D94F0B1F24F24CE40002F38B /* UserObj.swift */,
 			);
-			path = ListView;
+			path = AboutMe;
 			sourceTree = "<group>";
 		};
 		D956C9C024EEB20F004FE2C0 /* Preview Content */ = {
@@ -96,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D956C9B424EEB20C004FE2C0 /* ListView */ = {
+		D956C9B424EEB20C004FE2C0 /* AboutMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D956C9C924EEB20F004FE2C0 /* Build configuration list for PBXNativeTarget "ListView" */;
+			buildConfigurationList = D956C9C924EEB20F004FE2C0 /* Build configuration list for PBXNativeTarget "AboutMe" */;
 			buildPhases = (
 				D956C9B124EEB20C004FE2C0 /* Sources */,
 				D956C9B224EEB20C004FE2C0 /* Frameworks */,
@@ -108,9 +122,9 @@
 			);
 			dependencies = (
 			);
-			name = ListView;
+			name = AboutMe;
 			productName = ListView;
-			productReference = D956C9B524EEB20C004FE2C0 /* ListView.app */;
+			productReference = D956C9B524EEB20C004FE2C0 /* AboutMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +142,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D956C9B024EEB20C004FE2C0 /* Build configuration list for PBXProject "ListView" */;
+			buildConfigurationList = D956C9B024EEB20C004FE2C0 /* Build configuration list for PBXProject "AboutMe" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,7 +155,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D956C9B424EEB20C004FE2C0 /* ListView */,
+				D956C9B424EEB20C004FE2C0 /* AboutMe */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D926E2F5250B9D080087A59A /* AddUserInfo.swift in Sources */,
 				D956C9CD24EEB35F004FE2C0 /* ContactsObj.swift in Sources */,
 				D94F0B242500D5BC0002F38B /* ChangeUserInfoModalView.swift in Sources */,
 				D94F0B2024F24CE40002F38B /* UserObj.swift in Sources */,
@@ -172,6 +187,7 @@
 				D956C9BB24EEB20D004FE2C0 /* SceneDelegate.swift in Sources */,
 				D94F0B1E24F24CC70002F38B /* AboutView.swift in Sources */,
 				D956C9BD24EEB20D004FE2C0 /* ContentView.swift in Sources */,
+				D926E2F8250D01590087A59A /* Extensions.swift in Sources */,
 				D94F0B2224F24EDF0002F38B /* EditUserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,14 +325,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ListView/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AboutMe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ListView/Info.plist;
+				INFOPLIST_FILE = AboutMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = my.aiur.ListView;
+				PRODUCT_BUNDLE_IDENTIFIER = my.aiur.AboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,14 +344,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ListView/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AboutMe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ListView/Info.plist;
+				INFOPLIST_FILE = AboutMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = my.aiur.ListView;
+				PRODUCT_BUNDLE_IDENTIFIER = my.aiur.AboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,7 +361,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D956C9B024EEB20C004FE2C0 /* Build configuration list for PBXProject "ListView" */ = {
+		D956C9B024EEB20C004FE2C0 /* Build configuration list for PBXProject "AboutMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D956C9C724EEB20F004FE2C0 /* Debug */,
@@ -354,7 +370,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D956C9C924EEB20F004FE2C0 /* Build configuration list for PBXNativeTarget "ListView" */ = {
+		D956C9C924EEB20F004FE2C0 /* Build configuration list for PBXNativeTarget "AboutMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D956C9CA24EEB20F004FE2C0 /* Debug */,

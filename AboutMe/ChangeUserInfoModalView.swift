@@ -1,6 +1,6 @@
 //
 //  ChangeUserInfoModelView.swift
-//  ListView
+//  AboutMe
 //
 //  Created by Aiur on 03.09.2020.
 //  Copyright © 2020 Aiur. All rights reserved.
@@ -23,7 +23,8 @@ struct ChangeUserInfoModalView: View {
                 self.userField.value = newValue
             }))
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-
+            
+            Spacer()
             HStack {
                 Spacer()
                 Button(action: {
@@ -37,10 +38,12 @@ struct ChangeUserInfoModalView: View {
                 .cornerRadius(10)
                 Spacer()
             }
+//            Spacer()
         }
-        .frame(width: 300, height: 150)
+        .edgesIgnoringSafeArea(.top)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .padding()
-        .background(Color.green)
+//        .background(Color.green)
     }
 }
 
